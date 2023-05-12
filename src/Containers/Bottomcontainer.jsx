@@ -1,13 +1,17 @@
+import React from "react";
 import RegistrationForm from "../Components/UserRegistration";
 import LoginForm from "../Components/LoginComponents";
-import ResponsiveAppBar from './Components/AppBarComponent';
+import HomePage from "../Components/HomePage";
 
-export default function top() {
-    return (
+
+export default function bottom() {
+  return (
       <>
-          <ResponsiveAppBar />
           <RegistrationForm />
           <LoginForm />
+          <HomePage/>
       </>
     )
   }
+
+

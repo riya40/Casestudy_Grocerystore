@@ -1,21 +1,14 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import { Container,Grid} from '@mui/material';
-import ResponsiveAppBar from './Components/AppBarComponent';
-import BottomNavigationComponent from './Components/BottomNavigation';
-import LoginForm from './Components/LoginComponents';
-import Grocery from './Components/GroceryCardComponent';
-import RegistrationForm from './Components/UserRegistration';
+import React from "react";
+import { Grid,Container } from "@mui/material";
+import Grocery from "../GroceryCardComponent";
+import UserProfile from "../ProfileComponent";
 
-function App() {
-  return (
-    
-    <div>
-      
-      <ResponsiveAppBar/>
-      <br/>
-    
-      <Container maxWidth='lg' sx={{marginTop: '2rem'}}>
+const GroceryNavigation = ()=> {
+      return (
+        <>
+        <UserProfile/>
+        <br/>
+          <Container maxWidth='lg' sx={{marginTop: '2rem'}}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
                 <Grocery
@@ -39,15 +32,9 @@ function App() {
                         />
                     </Grid>
                 </Grid>
-            </Container> 
-      <BottomNavigationComponent/>
-      <RegistrationForm/>
-      <LoginForm/>
-
-      
-    </div>
-  );
-};
-
-
-export default App;
+            </Container>   
+        </>
+    )
+    
+}
+export default GroceryNavigation;

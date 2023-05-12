@@ -1,20 +1,65 @@
+<Card>
+            <CardMedia
+                component="img"
+                height="200"
+                image='https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2012/09/vegetables-and-fruits-farmers-market.jpg'
+                alt="Food Image !"
+            />
+            <CardContent>
+            <Typography variant="h5" component="div" >
+                    {dishName}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {dishDescription}
+                </Typography>    
+            </CardContent>            
+        </Card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
 import { Container,Grid} from '@mui/material';
+import RegistrationForm from './Components/UserRegistration';
+import LoginForm from './Components/LoginComponents';
 import ResponsiveAppBar from './Components/AppBarComponent';
 import BottomNavigationComponent from './Components/BottomNavigation';
-import LoginForm from './Components/LoginComponents';
 import Grocery from './Components/GroceryCardComponent';
-import RegistrationForm from './Components/UserRegistration';
+
 
 function App() {
   return (
-    
     <div>
-      
       <ResponsiveAppBar/>
       <br/>
-    
+      
       <Container maxWidth='lg' sx={{marginTop: '2rem'}}>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6} md={4}>
@@ -34,17 +79,15 @@ function App() {
                         <Grid item xs={12} sm={6} md={4}>
                         <Grocery
                         imageUrl='https://www.thelist.com/img/gallery/what-happens-to-your-body-when-you-drink-iced-tea-every-day/intro-1593618977.jpg'
-                            dishName='Ice Tea'
+                            dishName='Spices'
                         dishDescription= 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia reiciendis dolorum, quia ullam eos maxime sapiente inventore! Veniam a facilis tenetur repellendus, sequi natus, impedit sapiente corrupti non molestiae id earum tempore beatae possimus.'
                         />
-                    </Grid>
-                </Grid>
-            </Container> 
-      <BottomNavigationComponent/>
+                        </Grid>
+                      </Grid>
+                  </Container>
       <RegistrationForm/>
       <LoginForm/>
-
-      
+      <BottomNavigationComponent/>
     </div>
   );
 };

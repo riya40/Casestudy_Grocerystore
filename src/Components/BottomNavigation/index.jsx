@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import HomeIcon from '@mui/icons-material/Home';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-//import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import {BottomNavigation, BottomNavigationAction} from '@mui/material'
 import HomePage from '../HomePage';
 import Favourites from '../Favourites';
 import Notification from '../Notification';
+import LoginForm from '../LoginComponents';
+import RegistrationForm from '../UserRegistration';
+import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
 
 
 export default function BottomNavigationComponent() {
@@ -18,16 +19,16 @@ export default function BottomNavigationComponent() {
   return (
     <>
       {value === 0 && <HomePage />}
-      {value === 1 && <Favourites />}
-      {value === 2 && <Notification />}
+      {value === 1 && <RegistrationForm />}
+      {value === 2 && <LoginForm />}
 
         <BottomNavigation
             value={value}
             onChange={handleChange}
             showLabels>
-        <BottomNavigationAction  color='success' label="" icon={<HomeIcon/>} />
-        <BottomNavigationAction  color='success' label="" icon={<FavoriteBorderIcon />} />
-        <BottomNavigationAction  color='success' label="" icon={<NotificationsIcon />} />
+        
+        <BottomNavigationAction  color='success' label="" icon={<PersonOutlineIcon/>} />
+        <BottomNavigationAction  color='success' label="" icon={<LoginOutlinedIcon/>} />
         </BottomNavigation>
 
     </>

@@ -4,9 +4,7 @@ import { Grid } from "@mui/material";
 const Favourites = ()=>{
     return(
         <Grid Container>
-            <h1>
-                this is home page
-            </h1>
+            item 
         </Grid>
     );
 };
