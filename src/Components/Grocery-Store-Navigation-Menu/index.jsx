@@ -27,7 +27,8 @@ const GroceryNavigation = ()=> {
                         <Grid item xs={12} sm={6} md={4}>
                         <Grocery
                         imageUrl='https://www.thelist.com/img/gallery/what-happens-to-your-body-when-you-drink-iced-tea-every-day/intro-1593618977.jpg'
-                            dishName='Ice Tea'
+                            dishName='spices
+                            '
                         dishDescription= 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia reiciendis dolorum, quia ullam eos maxime sapiente inventore! Veniam a facilis tenetur repellendus, sequi natus, impedit sapiente corrupti non molestiae id earum tempore beatae possimus.'
                         />
                     </Grid>

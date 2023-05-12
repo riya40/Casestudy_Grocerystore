@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import {BottomNavigation, BottomNavigationAction} from '@mui/material'
 import HomePage from '../HomePage';
-import Favourites from '../Favourites';
-import Notification from '../Notification';
 import LoginForm from '../LoginComponents';
 import RegistrationForm from '../UserRegistration';
 import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
